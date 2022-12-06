@@ -7,6 +7,7 @@ import { AddEmpComponent } from './add-emp/add-emp.component';
 import { FormsModule } from '@angular/forms';
 import { ViewEmpComponent } from './view-emp/view-emp.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavigationComponent } from './navigation/navigation.component';
 
 
 const myRoute:Routes=[
@@ -26,7 +27,8 @@ const myRoute:Routes=[
   declarations: [
     AppComponent,
     AddEmpComponent,
-    ViewEmpComponent
+    ViewEmpComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
