@@ -27,6 +27,21 @@ export class AddEmpComponent {
       (response:any)=>
       {
         console.log(response)
+        if (response.status=="success")
+        {
+          alert("Employee added successfully")
+          this.empcode=""
+          this.empname=""
+          this.designation=""
+          this.salary=""
+          this.companyname=""
+          this.mobile=""
+          this.username=""
+          this.password=""
+        }
+        else{
+          alert("Something went wrong")
+        }
         
       }
     )
