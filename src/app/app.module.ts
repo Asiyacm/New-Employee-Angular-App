@@ -9,6 +9,7 @@ import { ViewEmpComponent } from './view-emp/view-emp.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
 import { HttpClientModule  } from '@angular/common/http';
+import { SearchEmpComponent } from './search-emp/search-emp.component';
 
 
 const myRoute:Routes=[
@@ -20,6 +21,10 @@ const myRoute:Routes=[
   {
     path:"view",
     component:ViewEmpComponent
+  },
+  {
+    path:"search",
+    component:SearchEmpComponent
   }
 ]
 
@@ -29,7 +34,8 @@ const myRoute:Routes=[
     AppComponent,
     AddEmpComponent,
     ViewEmpComponent,
-    NavigationComponent
+    NavigationComponent,
+    SearchEmpComponent
   ],
   imports: [
     BrowserModule,
