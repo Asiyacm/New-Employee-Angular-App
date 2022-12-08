@@ -21,6 +21,11 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/search",data)
   }
+
+  deleteEmployee=(dataDelete:any)=>
+  {
+    return this.http.post("http://localhost:8080/delete",dataDelete)
+  }
   
 }
 
