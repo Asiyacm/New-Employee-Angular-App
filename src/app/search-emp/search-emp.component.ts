@@ -30,4 +30,25 @@ searchData:any=[]
     )
   }
 
+  deleteBtnClick=(id:any)=>
+  {
+    let data:any={"id":id}
+  
+     this.api.deleteEmployee(data).subscribe(
+    (response:any)=>
+    {  console.log(response)
+
+      if (response.status=="success") {
+
+        alert("Deleted Successfully")
+        this.searchData=[]
+        
+      } 
+    }
+     )
+     
+   
+    
+
+}
 }
